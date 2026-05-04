@@ -25,7 +25,7 @@ This dashboard answers all three at the ZIP level, the product level, the age gr
 
 **Visual 1 — Account Analysis by ZIP**
 Top N ZIP codes by accounts opened and closed (stacked bars by product), plus a diverging net growth bar chart showing top 5 growing ZIPs (green) and top 5 declining ZIPs (red). Major = Lending, Top N = 5.
-![Account Analysis by Zip](screenshots/page1_zip_analysis.png)
+https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page1_zip_analysis.png
 
 **Visual 2 — Accounts Opened vs Closed by Age Group**
 Butterfly bar chart showing opened vs closed per age bracket, with product breakdown panels below showing which lending products are driving opens and closes per demographic segment.
