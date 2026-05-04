@@ -25,15 +25,15 @@ This dashboard answers all three at the ZIP level, the product level, the age gr
 
 **Visual 1 — Account Analysis by ZIP**
 Top N ZIP codes by accounts opened and closed (stacked bars by product), plus a diverging net growth bar chart showing top 5 growing ZIPs (green) and top 5 declining ZIPs (red). Major = Lending, Top N = 5.
-https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page1_zip_analysis.png
+![Account Analysis by Zip](snapshots/page1_zip_analysis.png)
 
 **Visual 2 — Accounts Opened vs Closed by Age Group**
 Butterfly bar chart showing opened vs closed per age bracket, with product breakdown panels below showing which lending products are driving opens and closes per demographic segment.
-![Age Group Analysis](screenshots/page2_age_group.png)
+https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page2_age_group.png
 
 **Visual 3 — Product Growth and YOY Monthly Matrix**
 Stacked bar chart ranking all lending products by total opened and closed, with a net growth line overlaid. Below it is a scrollable YOY matrix showing month-by-month account counts and percentage change vs prior year per product. YOY% is blank for 2024 months as no prior year data exists — this is correct behavior, not missing data.
-![Product Growth](screenshots/page3_product_growth.png)
+https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page3_product_growth.png
 
 ---
 
@@ -43,19 +43,19 @@ The Trend Analysis page has a **bookmark-driven toggle** at the top — clicking
 
 **Visual 4 — Opened vs Closed by Month**
 Three trend lines over 28 months: Accounts Opened (green), Accounts Closed (yellow), Net Growth (orange). The green line trending upward into 2026 with a stable gap above the yellow line shows healthy and growing portfolio momentum for the Lending category. Time button set to 3Y.
-![Trend Analysis Line Charts](screenshots/page4_trend_line.png)
+https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page4_trend_line.png
 
 **Visual 5 — Accounts Opened and Closed by Age Group Over Time**
 Two side-by-side line charts tracking Under 40 (light blue), 40 to 60 (dark blue), and 60 plus (orange) monthly. Under 40 dominates both opens and closes and shows a clear upward trajectory into early 2026, confirming younger members are the fastest-growing lending segment.
-![Age Group Trend](screenshots/page5_age_trends.png)
+https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page5_age_trends.png
 
 **Visual 6 — Product Growth Over Time**
 Monthly accounts opened per lending product overlaid on a single chart. Shows which products are gaining momentum and which are flattening. The Flex Credit Reserve orange spike in early 2026 is a notable outlier worth investigating for a targeted campaign opportunity.
-![Product Growth Over Time](screenshots/page6_product_over_time.png)
+https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page6_product_over_time.png
 
 **Visual 7 — Monthly Opened vs Closed by Product**
 Monthly net flow (opened minus closed) per product per month. Lines fluctuate around 40 to 90 range showing consistent monthly activity across all 5 lending products with no product consistently dipping toward zero.
-![Monthly Net Flow](screenshots/page7_monthly_net_flow.png)
+https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page7_monthly_net_flow.png
 
 ---
 
@@ -67,11 +67,11 @@ Clicking the **Grid Charts** button activates the bookmark and replaces all line
 
 **Grid Tables 2 and 3 — Accounts Opened and Closed by Age Group** show month-by-row, age bucket (Under 40, 40 to 60, 60 plus) by column with row totals — directly usable in executive reports without exporting.
 
-![Grid Charts Top](screenshots/page8_grid_charts.png)
+https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page8_grid_charts.png
 
 **Grid Table 4 — Product Growth Over Time** and **Grid Table 5 — Monthly Opened vs Closed by Product** show the same product-level data from the line charts as precise numbers per month per product with column totals. Express Auto Finance leads with 24,962 total opens across the period.
 
-![Grid Charts Products](screenshots/page9_grid_charts_products.png)
+https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page9_grid_charts_products.png
 
 ---
 
