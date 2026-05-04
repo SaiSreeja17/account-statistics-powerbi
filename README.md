@@ -1,7 +1,7 @@
 # Account Statistics Dashboard
 **Power BI | DAX | Power Query | Financial Services Analytics**
 
-A two-page interactive Power BI report built to surface actionable insights for credit union leadership. The dashboard analyzes 100,000 account records across five Texas regions spanning January 2024 to April 2026, covering eight product categories, nine member age groups, and 87 ZIP codes. Every visual was intentionally placed to answer a different business question — no two visuals repeat the same story.
+A two-page interactive Power BI report built to surface actionable insights for credit union leadership. The dashboard analyzes 100,000 account records across five Texas regions spanning January 2024 to April 2026, covering eight product categories, nine member age groups, and 87 ZIP codes. Every visual was intentionally placed to answer a different business question. No two visuals repeat the same story.
 
 ---
 
@@ -21,70 +21,68 @@ This dashboard answers all three at the ZIP level, the product level, the age gr
 
 > All screenshots are filtered to the **Lending** major category for visual clarity. The dashboard supports full cross-filter across all 8 product categories, 5 regions, and 28 months.
 
-### Page 1 — Accounts Statistics
+### Page 1 - Accounts Statistics
 
-**Visual 1 — Account Analysis by ZIP**
+**Visual 1 - Account Analysis by ZIP**
 Top N ZIP codes by accounts opened and closed (stacked bars by product), plus a diverging net growth bar chart showing top 5 growing ZIPs (green) and top 5 declining ZIPs (red). Major = Lending, Top N = 5.
 ![Account Analysis by Zip](snapshots/page1_zip_analysis.png)
 
-**Visual 2 — Accounts Opened vs Closed by Age Group**
+**Visual 2 - Accounts Opened vs Closed by Age Group**
 Butterfly bar chart showing opened vs closed per age bracket, with product breakdown panels below showing which lending products are driving opens and closes per demographic segment.
-https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page2_age_group.png
+![Age Group Analysis](snapshots/page2_age_group.png)
 
-**Visual 3 — Product Growth and YOY Monthly Matrix**
-Stacked bar chart ranking all lending products by total opened and closed, with a net growth line overlaid. Below it is a scrollable YOY matrix showing month-by-month account counts and percentage change vs prior year per product. YOY% is blank for 2024 months as no prior year data exists — this is correct behavior, not missing data.
-https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page3_product_growth.png
+**Visual 3 - Product Growth and YOY Monthly Matrix**
+Stacked bar chart ranking all lending products by total opened and closed, with a net growth line overlaid. Below it is a scrollable YOY matrix showing month-by-month account counts and percentage change vs prior year per product. YOY% is blank for 2024 months as no prior year data exists. This is correct behavior, not missing data.
+![Product Growth](snapshots/page3_product_growth.png)
 
 ---
 
-### Page 2 — Trend Analysis (Line Charts View)
+### Page 2 - Trend Analysis (Line Charts View)
 
-The Trend Analysis page has a **bookmark-driven toggle** at the top — clicking Line Charts shows visual trend lines, clicking Grid Charts replaces every chart with a precise data table. Both views use the same slicers and time buttons so the numbers always match.
+The Trend Analysis page has a **bookmark-driven toggle** at the top. Clicking Line Charts shows visual trend lines. Clicking Grid Charts replaces every chart with a precise data table. Both views use the same slicers and time buttons so the numbers always match.
 
-**Visual 4 — Opened vs Closed by Month**
+**Visual 4 - Opened vs Closed by Month**
 Three trend lines over 28 months: Accounts Opened (green), Accounts Closed (yellow), Net Growth (orange). The green line trending upward into 2026 with a stable gap above the yellow line shows healthy and growing portfolio momentum for the Lending category. Time button set to 3Y.
-https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page4_trend_line.png
+![Trend Analysis Line Charts](snapshots/page4_trend_line.png)
 
-**Visual 5 — Accounts Opened and Closed by Age Group Over Time**
+**Visual 5 - Accounts Opened and Closed by Age Group Over Time**
 Two side-by-side line charts tracking Under 40 (light blue), 40 to 60 (dark blue), and 60 plus (orange) monthly. Under 40 dominates both opens and closes and shows a clear upward trajectory into early 2026, confirming younger members are the fastest-growing lending segment.
-https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page5_age_trends.png
+![Age Group Trend](snapshots/page5_age_trends.png)
 
-**Visual 6 — Product Growth Over Time**
+**Visual 6 - Product Growth Over Time**
 Monthly accounts opened per lending product overlaid on a single chart. Shows which products are gaining momentum and which are flattening. The Flex Credit Reserve orange spike in early 2026 is a notable outlier worth investigating for a targeted campaign opportunity.
-https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page6_product_over_time.png
+![Product Growth Over Time](snapshots/page6_product_over_time.png)
 
-**Visual 7 — Monthly Opened vs Closed by Product**
+**Visual 7 - Monthly Opened vs Closed by Product**
 Monthly net flow (opened minus closed) per product per month. Lines fluctuate around 40 to 90 range showing consistent monthly activity across all 5 lending products with no product consistently dipping toward zero.
-https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page7_monthly_net_flow.png
+![Monthly Net Flow](snapshots/page7_monthly_net_flow.png)
 
 ---
 
-### Page 2 — Trend Analysis (Grid Charts View)
+### Page 2 - Trend Analysis (Grid Charts View)
 
 Clicking the **Grid Charts** button activates the bookmark and replaces all line charts with four precise data tables. This view is designed for analysts and stakeholders who need exact numbers rather than visual trends. The same slicers, time buttons, and filters apply so the numbers shown match exactly what the line charts represent.
 
-**Grid Table 1 — Opened vs Closed by Month** shows monthly totals with a Net Growth column — useful for reconciliation and monthly reporting.
+**Grid Table 1 - Opened vs Closed by Month** shows monthly totals with a Net Growth column, useful for reconciliation and monthly reporting.
 
-**Grid Tables 2 and 3 — Accounts Opened and Closed by Age Group** show month-by-row, age bucket (Under 40, 40 to 60, 60 plus) by column with row totals — directly usable in executive reports without exporting.
+**Grid Tables 2 and 3 - Accounts Opened and Closed by Age Group** show month by row, age bucket (Under 40, 40 to 60, 60 plus) by column with row totals, directly usable in executive reports without exporting.
+![Grid Charts Top](snapshots/page8_grid_charts.png)
 
-https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page8_grid_charts.png
-
-**Grid Table 4 — Product Growth Over Time** and **Grid Table 5 — Monthly Opened vs Closed by Product** show the same product-level data from the line charts as precise numbers per month per product with column totals. Express Auto Finance leads with 24,962 total opens across the period.
-
-https://github.com/SaiSreeja17/account-statistics-powerbi/blob/main/snapshots/page9_grid_charts_products.png
+**Grid Table 4 - Product Growth Over Time** and **Grid Table 5 - Monthly Opened vs Closed by Product** show the same product-level data from the line charts as precise numbers per month per product with column totals. Express Auto Finance leads with 24,962 total opens across the period.
+![Grid Charts Products](snapshots/page9_grid_charts_products.png)
 
 ---
 
 ## Dashboard Pages
 
-### Page 1 — Accounts Statistics
+### Page 1 - Accounts Statistics
 
 **Slicers:** Month | Region | Major Product Category | Product
 **Reset Button:** Top right corner resets all slicers to default
 
 ---
 
-#### Visual 1 — Account Analysis by ZIP (Top N)
+#### Visual 1 - Account Analysis by ZIP (Top N)
 
 A dynamic Top N slicer (default 5, adjustable) surfaces the best and worst performing ZIP codes by accounts opened and accounts closed side by side as stacked bar charts, broken down by product within each ZIP.
 
@@ -94,7 +92,7 @@ Below these sits a diverging bar chart showing Net Growth by ZIP with green bars
 
 ---
 
-#### Visual 2 — Accounts Opened vs Closed by Age Group
+#### Visual 2 - Accounts Opened vs Closed by Age Group
 
 A horizontal butterfly bar chart showing opened vs closed accounts per age bracket from under 10 through 80 plus. The gap between the two bars is the net growth story per demographic.
 
@@ -106,7 +104,7 @@ Below it sit two product breakdown charts showing which specific products are dr
 
 ---
 
-#### Visual 3 — Product Growth and YOY Monthly Matrix
+#### Visual 3 - Product Growth and YOY Monthly Matrix
 
 A ranked stacked bar chart showing total accounts opened and closed per product with a net growth line overlaid. Products are sorted by total volume so the highest-performing products are immediately visible.
 
@@ -121,7 +119,7 @@ Below it is a scrollable Year over Year matrix showing monthly opened counts per
 
 ---
 
-### Page 2 — Accounts Trend Analysis
+### Page 2 - Accounts Trend Analysis
 
 **Slicers:** Region | Major Product Category | Product
 **Time Buttons:** YTD | 1Y | 3Y | 5Y | Max
@@ -134,15 +132,15 @@ Below it is a scrollable Year over Year matrix showing monthly opened counts per
 
 This is the most important UX feature in the report. A bookmark button at the top of the page switches the entire view between two modes.
 
-**Line Charts mode** shows trend lines for visual pattern recognition — useful for spotting growth trajectories, seasonal dips, and product divergence over time.
+**Line Charts mode** shows trend lines for visual pattern recognition, useful for spotting growth trajectories, seasonal dips, and product divergence over time.
 
-**Grid Charts mode** replaces every chart with a precise data table showing the exact same information as numbers. This is for when a stakeholder asks for the exact number in a specific month — the answer is one click away without leaving the page or opening a separate report.
+**Grid Charts mode** replaces every chart with a precise data table showing the exact same information as numbers. This is for when a stakeholder asks for the exact number in a specific month. The answer is one click away without leaving the page or opening a separate report.
 
 This design means the dashboard serves two audiences simultaneously: executives who want to see the trend and analysts who need the exact figure.
 
 ---
 
-#### Visual 4 — Opened vs Closed by Month
+#### Visual 4 - Opened vs Closed by Month
 
 Three lines tracked over the full date range: Accounts Opened (green), Accounts Closed (yellow), Net Growth (orange). The gap between opened and closed lines represents the health of the portfolio at any point in time.
 
@@ -150,7 +148,7 @@ Three lines tracked over the full date range: Accounts Opened (green), Accounts 
 
 ---
 
-#### Visual 5 and 6 — Accounts Opened and Closed by Age Group Over Time
+#### Visual 5 and 6 - Accounts Opened and Closed by Age Group Over Time
 
 Three age category lines (Under 40, 40 to 60, 60 plus) tracked monthly on both the opened and closed sides. Comparing these two charts side by side reveals which age groups have rising closure rates even when their open counts look healthy.
 
@@ -158,13 +156,13 @@ Three age category lines (Under 40, 40 to 60, 60 plus) tracked monthly on both t
 
 ---
 
-#### Visual 7 — Product Growth Over Time
+#### Visual 7 - Product Growth Over Time
 
-All lending products overlaid on a single line chart showing monthly accounts opened per product per month. Useful for identifying which products are gaining momentum and which are flattening. The Flex Credit Reserve spike in early 2026 is an outlier worth investigating — a sudden surge in a single product month signals either a successful campaign or a data event worth reviewing.
+All lending products overlaid on a single line chart showing monthly accounts opened per product per month. Useful for identifying which products are gaining momentum and which are flattening. A sudden surge in a single product month signals either a successful campaign or a data event worth reviewing.
 
 ---
 
-#### Visual 8 — Monthly Opened vs Closed by Product
+#### Visual 8 - Monthly Opened vs Closed by Product
 
 Net position per product per month. When a product line dips below zero it means more accounts closed than opened that month, which is an immediate alert for the product team.
 
@@ -172,7 +170,7 @@ Net position per product per month. When a product line dips below zero it means
 
 #### Grid Charts View
 
-When Grid Charts is active all eight visuals become precise data matrices:
+When Grid Charts is active all visuals become precise data matrices:
 
 - Opened vs Closed by Month table with Net Growth column
 - Accounts Opened by Age Group matrix (month by age bucket with totals)
@@ -255,97 +253,130 @@ Under 40 account openings show a clear upward trend from mid-2024 through early 
 
 **DAX Measures**
 
-```
--- Net Growth includes charge-offs as an additional deduction from growth
--- Formula: Opened minus (Closed plus Charge-Offs)
+```dax
+-- Net Growth = Opened minus (Closed plus Charge-Offs)
+-- Charge-offs are included as an additional deduction for accurate portfolio growth
+
 TOTAL_NETGROWTH =
-SUM('AccountStatistics'[CURR_MONTH_OPEN_CNT])
-- (SUM('AccountStatistics'[CURR_MONTH_CLS_CNT]) + SUM('AccountStatistics'[CURR_MONTH_CO_CNT]))
+    SUM('AccountStatistics'[CURR_MONTH_OPEN_CNT])
+    - (
+        SUM('AccountStatistics'[CURR_MONTH_CLS_CNT])
+        + SUM('AccountStatistics'[CURR_MONTH_CO_CNT])
+      )
 
 
--- Dynamic Top N and Bottom N ZIP measure
--- Returns positive net growth for top N ZIPs, negative for bottom N ZIPs, blank for all others
--- The * 1000000 + ZIP trick breaks ties deterministically using ZIP code as a tiebreaker
--- REMOVEFILTERS on PRODUCT ensures ZIP ranking is based on total across all products
+-- Top N and Bottom N ZIP measure
+-- Top N ZIPs return positive net growth
+-- Bottom N ZIPs return negative net growth
+-- All other ZIPs return BLANK
+-- Multiplying by 1000000 and adding ZIP code breaks ties deterministically
+-- REMOVEFILTERS on PRODUCT ensures ranking is based on total across all products
+
 TOPNBOTTOMN_NETGROWTH =
-VAR RankDesc = TOPN(
-    N[N Value],
-    ALL('AccountStatistics'[ZIP]),
-    CALCULATE(
-        [TOTAL_NETGROWTH] * 1000000 + VALUE(SELECTEDVALUE('AccountStatistics'[ZIP])),
-        REMOVEFILTERS('AccountStatistics'[PRODUCT])
-    ),
-    DESC
-)
-VAR RankAsc = TOPN(
-    N[N Value],
-    ALL('AccountStatistics'[ZIP]),
-    CALCULATE(
-        [TOTAL_NETGROWTH] * 1000000 + VALUE(SELECTEDVALUE('AccountStatistics'[ZIP])),
-        REMOVEFILTERS('AccountStatistics'[PRODUCT])
-    ),
-    ASC
-)
-VAR SelMet = SELECTEDVALUE('AccountStatistics'[ZIP])
-RETURN
-SWITCH(
-    TRUE(),
-    SelMet IN SELECTCOLUMNS(RankDesc, "ZIP", 'AccountStatistics'[ZIP]), [TOTAL_NETGROWTH],
-    SelMet IN SELECTCOLUMNS(RankAsc, 'AccountStatistics'[ZIP]), -ABS([TOTAL_NETGROWTH]),
-    BLANK()
-)
-
-
--- YOY % change vs same month prior year
--- Returns blank when no prior year data exists (all of 2024 will show blank)
-YOY% =
-VAR CurrentCount = SUM('AccountStatistics'[TOTAL_OPEN_CNT])
-VAR PrevCount =
-    CALCULATE(
-        SUM('AccountStatistics'[TOTAL_OPEN_CNT]),
-        FILTER(
-            ALL('AccountStatistics'),
-            'AccountStatistics'[PRODUCT] = SELECTEDVALUE('AccountStatistics'[PRODUCT]) &&
-            'AccountStatistics'[LOAD_YEAR] = SELECTEDVALUE('AccountStatistics'[LOAD_YEAR]) - 1 &&
-            'AccountStatistics'[LOAD_MONTH] = SELECTEDVALUE('AccountStatistics'[LOAD_MONTH])
+    VAR RankDesc =
+        TOPN(
+            N[N Value],
+            ALL('AccountStatistics'[ZIP]),
+            CALCULATE(
+                [TOTAL_NETGROWTH] * 1000000
+                    + VALUE(SELECTEDVALUE('AccountStatistics'[ZIP])),
+                REMOVEFILTERS('AccountStatistics'[PRODUCT])
+            ),
+            DESC
         )
-    )
-RETURN DIVIDE(CurrentCount - PrevCount, PrevCount) * 100
+    VAR RankAsc =
+        TOPN(
+            N[N Value],
+            ALL('AccountStatistics'[ZIP]),
+            CALCULATE(
+                [TOTAL_NETGROWTH] * 1000000
+                    + VALUE(SELECTEDVALUE('AccountStatistics'[ZIP])),
+                REMOVEFILTERS('AccountStatistics'[PRODUCT])
+            ),
+            ASC
+        )
+    VAR SelMet =
+        SELECTEDVALUE('AccountStatistics'[ZIP])
+    RETURN
+        SWITCH(
+            TRUE(),
+            SelMet IN SELECTCOLUMNS(RankDesc, "ZIP", 'AccountStatistics'[ZIP]),
+                [TOTAL_NETGROWTH],
+            SelMet IN SELECTCOLUMNS(RankAsc, 'AccountStatistics'[ZIP]),
+                -ABS([TOTAL_NETGROWTH]),
+            BLANK()
+        )
+
+
+-- YOY Percent change vs same month prior year
+-- Returns BLANK for 2024 months because no 2023 data exists to compare against
+-- Returns actual percentage from January 2025 onward
+
+YOY% =
+    VAR CurrentCount =
+        SUM('AccountStatistics'[TOTAL_OPEN_CNT])
+    VAR PrevCount =
+        CALCULATE(
+            SUM('AccountStatistics'[TOTAL_OPEN_CNT]),
+            FILTER(
+                ALL('AccountStatistics'),
+                'AccountStatistics'[PRODUCT]
+                    = SELECTEDVALUE('AccountStatistics'[PRODUCT])
+                    && 'AccountStatistics'[LOAD_YEAR]
+                    = SELECTEDVALUE('AccountStatistics'[LOAD_YEAR]) - 1
+                    && 'AccountStatistics'[LOAD_MONTH]
+                    = SELECTEDVALUE('AccountStatistics'[LOAD_MONTH])
+            )
+        )
+    RETURN
+        DIVIDE(CurrentCount - PrevCount, PrevCount) * 100
 
 
 -- YOY absolute count difference vs same month prior year
+
 YOY# =
-VAR CurrentCount = SUM('AccountStatistics'[TOTAL_OPEN_CNT])
-VAR PrevCount =
-    CALCULATE(
-        SUM('AccountStatistics'[TOTAL_OPEN_CNT]),
-        FILTER(
-            ALL('AccountStatistics'),
-            'AccountStatistics'[PRODUCT] = SELECTEDVALUE('AccountStatistics'[PRODUCT]) &&
-            'AccountStatistics'[LOAD_YEAR] = SELECTEDVALUE('AccountStatistics'[LOAD_YEAR]) - 1 &&
-            'AccountStatistics'[LOAD_MONTH] = SELECTEDVALUE('AccountStatistics'[LOAD_MONTH])
+    VAR CurrentCount =
+        SUM('AccountStatistics'[TOTAL_OPEN_CNT])
+    VAR PrevCount =
+        CALCULATE(
+            SUM('AccountStatistics'[TOTAL_OPEN_CNT]),
+            FILTER(
+                ALL('AccountStatistics'),
+                'AccountStatistics'[PRODUCT]
+                    = SELECTEDVALUE('AccountStatistics'[PRODUCT])
+                    && 'AccountStatistics'[LOAD_YEAR]
+                    = SELECTEDVALUE('AccountStatistics'[LOAD_YEAR]) - 1
+                    && 'AccountStatistics'[LOAD_MONTH]
+                    = SELECTEDVALUE('AccountStatistics'[LOAD_MONTH])
+            )
         )
-    )
-RETURN (CurrentCount - PrevCount)
+    RETURN
+        (CurrentCount - PrevCount)
 
 
--- Date selection table powering the YTD / 1Y / 3Y / 5Y / Max buttons
--- Each button filters the report to a different rolling date window
+-- Calculated table powering the YTD / 1Y / 3Y / 5Y / Max time buttons
+-- Each selection filters the report to a different rolling date window
+
 DateSelection =
-VAR TodayDate = TODAY()
-VAR YearStart = DATE(YEAR(TodayDate), 1, 1)
-VAR OneYStart = EDATE(TodayDate, -12)
-VAR ThreeYStart = EDATE(TodayDate, -36)
-VAR FiveYearStart = EDATE(TodayDate, -60)
-VAR MaxStart = MIN('AccountStatistics'[Month])
-RETURN
-UNION(
-    ADDCOLUMNS(CALENDAR(YearStart, TodayDate), "Selection", "YTD", "Order", 1),
-    ADDCOLUMNS(CALENDAR(OneYStart, TodayDate), "Selection", "1Y", "Order", 2),
-    ADDCOLUMNS(CALENDAR(ThreeYStart, TodayDate), "Selection", "3Y", "Order", 3),
-    ADDCOLUMNS(CALENDAR(FiveYearStart, TodayDate), "Selection", "5Y", "Order", 4),
-    ADDCOLUMNS(CALENDAR(MaxStart, TodayDate), "Selection", "Max", "Order", 5)
-)
+    VAR TodayDate = TODAY()
+    VAR YearStart = DATE(YEAR(TodayDate), 1, 1)
+    VAR OneYStart = EDATE(TodayDate, -12)
+    VAR ThreeYStart = EDATE(TodayDate, -36)
+    VAR FiveYearStart = EDATE(TodayDate, -60)
+    VAR MaxStart = MIN('AccountStatistics'[Month])
+    RETURN
+        UNION(
+            ADDCOLUMNS(CALENDAR(YearStart, TodayDate),
+                "Selection", "YTD", "Order", 1),
+            ADDCOLUMNS(CALENDAR(OneYStart, TodayDate),
+                "Selection", "1Y", "Order", 2),
+            ADDCOLUMNS(CALENDAR(ThreeYStart, TodayDate),
+                "Selection", "3Y", "Order", 3),
+            ADDCOLUMNS(CALENDAR(FiveYearStart, TodayDate),
+                "Selection", "5Y", "Order", 4),
+            ADDCOLUMNS(CALENDAR(MaxStart, TodayDate),
+                "Selection", "Max", "Order", 5)
+        )
 ```
 
 **Bookmarks**
@@ -368,7 +399,7 @@ UNION(
 ```
 account-statistics-powerbi/
 ├── Account Statistics.pbix              Power BI report file
-├── texas_100k.csv                       Source dataset (100,000 rows)
+├── texas_100k.csv                    Source dataset (100,000 rows)
 ├── README.md                            This file
 └── snapshots/
     ├── page1_zip_analysis.png           ZIP Top N analysis with diverging net growth
